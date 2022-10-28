@@ -11,4 +11,5 @@ npm run dev
 TODO
 
 - [ ] theme changer change icon with theme
+- [ ] https://www.npmjs.com/package/next-pwa extra options
 
