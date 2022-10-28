@@ -11,3 +11,5 @@ npm run dev
 TODO
 
 - [ ] theme changer change icon with theme
+- [ ] add icons for pwa
+- [ ] fix vercel analytics csp
