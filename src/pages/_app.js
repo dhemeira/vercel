@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
     <MyThemeContextProvider>
       <MainLayout>
         <Component {...pageProps} />
+        <Analytics />
       </MainLayout>
     </MyThemeContextProvider>
   );
