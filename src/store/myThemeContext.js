@@ -44,7 +44,7 @@ export function MyThemeContextProvider(props) {
   }
 
   return (
-    <MyThemeContext.Provider value={{ isDarkTheme: true, toggleThemeHandler }}>
+    <MyThemeContext.Provider value={{ isDarkTheme, toggleThemeHandler }}>
       {props.children}
     </MyThemeContext.Provider>
   );
