@@ -19,8 +19,8 @@ export function MyThemeContextProvider(props) {
       setIsDarkTheme(true);
     } else {
       const isDarkTheme = JSON.parse(localStorage.getItem('isDarkTheme'));
-      if (isDarkTheme) document?.querySelector('body')?.setAttribute('data-theme', 'business');
-      else document?.querySelector('body')?.setAttribute('data-theme', 'corporate');
+      if (isDarkTheme) document?.querySelector('body')?.setAttribute('data-theme', 'dark');
+      else document?.querySelector('body')?.setAttribute('data-theme', 'light');
       setIsDarkTheme(() => {
         return isDarkTheme;
       });
@@ -35,8 +35,8 @@ export function MyThemeContextProvider(props) {
   }
 
   function toggleDarkClassToBody() {
-    if (isDarkTheme) document?.querySelector('body')?.setAttribute('data-theme', 'business');
-    else document?.querySelector('body')?.setAttribute('data-theme', 'corporate');
+    if (isDarkTheme) document?.querySelector('body')?.setAttribute('data-theme', 'dark');
+    else document?.querySelector('body')?.setAttribute('data-theme', 'light');
   }
 
   function setValueToLocalStorage() {
