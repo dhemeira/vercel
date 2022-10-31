@@ -10,3 +10,6 @@ npm run dev
 
 TODO
 
+- [ ] Add notification support
+- [ ] Create the first tool
+
