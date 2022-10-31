@@ -31,5 +31,14 @@
   "background_color": "#1C1C1C",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "shortcuts": [
+    {
+      "name": "Open Tools",
+      "short_name": "Tools",
+      "description": "View the list of tools available",
+      "url": "/tools",
+      "icons": [{ "src": "/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    }
+  ]
 }
