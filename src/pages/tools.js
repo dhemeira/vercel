@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 const Tools = () => {
   return (
@@ -13,6 +14,11 @@ const Tools = () => {
       </Head>
       <div className="flex flex-col">
         <h1 className="text-3xl font-bold">Tools</h1>
+        <div className="flex flex-col">
+          <Link href="/todo" className="btn btn-primary">
+            Todo
+          </Link>
+        </div>
       </div>
     </>
   );

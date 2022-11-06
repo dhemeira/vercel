@@ -10,6 +10,11 @@ npm run dev
 
 TODO
 
-- [ ] Add notification support
-- [ ] Create the first tool
+- [x] Create the first tool
+- [ ] Make authentication
+- [ ] Make todo site better
+- [ ] Make todo api better
+- [ ] Make todo site empty state
+
+(- [ ] Add notification support)
 
