@@ -7,7 +7,6 @@ export const getServerSideProps = async () => {
 };
 
 const SignIn = ({ providers }) => {
-  console.log('providers client', providers);
   return (
     <>
       {Object.values(providers).map((provider) => (
