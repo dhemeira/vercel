@@ -10,10 +10,8 @@ export default async function handler(req, res) {
 
     const data = JSON.parse(req.body);
 
-    console.log('pass', data.temppass);
-
     if (data.temppass == process.env.TEMPORARY_PASSWORD) {
-      res.json({ message: await prisma.todos.create({ data: { name: data.name } }) });
+      res.json({ message: await prisma.Todo.create({ data: { name: data.name } }) });
     }
     res.status(500).json({ message: 'Authentication failed' });
   } catch (error) {
