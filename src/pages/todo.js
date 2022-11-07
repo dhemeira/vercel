@@ -4,7 +4,7 @@ import { prisma } from '@/lib/prisma';
 export const getServerSideProps = async (context) => {
   context.res.setHeader('Cache-Control', 'public, s-maxage=30, stale-while-revalidate=59');
 
-  const todos = await prisma.todos.findMany({ take: 50 });
+  const todos = await prisma.Todo.findMany({ take: 50 });
   return { props: { todos } };
 };
 
@@ -18,8 +18,7 @@ const addItem = async (e) => {
   await fetch('/api/todos', { method: 'POST', body: JSON.stringify(value) });
 };
 
-const Todo = (props) => {
-  const todos = props.todos;
+const Todo = ({ todos }) => {
   return (
     <>
       <Head>
