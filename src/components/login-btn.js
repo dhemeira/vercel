@@ -5,9 +5,10 @@ export default function LoginBtn() {
   if (session) {
     return (
       <>
-        Signed in as {session.user.email} <br />
+        <img src={session.user.image} />
+        Signed in as {session.user.name} <br />
         <button className="btn btn-primary" onClick={() => signOut()}>
-          Login
+          Logout
         </button>
       </>
     );
