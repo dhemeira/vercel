@@ -4,7 +4,7 @@ import { prisma } from '@/lib/prisma';
 export const getServerSideProps = async (context) => {
   context.res.setHeader('Cache-Control', 'public, s-maxage=30, stale-while-revalidate=59');
 
-  const todos = await prisma.Todo.findMany({ take: 50 });
+  const todos = await prisma.todo.findMany({ take: 50 });
   return { props: { todos } };
 };
 
