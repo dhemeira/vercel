@@ -16,7 +16,7 @@ npm run dev
 
 TODO
 
-- ~~Switch to firebase auth~~
+- [ ] ~~Switch to firebase auth~~
   - Next 13 not yet supported
 - [ ] Make todo site better
 - [ ] Make todo api better
