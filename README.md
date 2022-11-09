@@ -23,5 +23,6 @@ TODO
 - [ ] Create todo site empty state
 - [ ] Make tools site better
 - [ ] Change img tags to next/image
+- [x] Follow commit name convention
 
 - [ ] **(Add notification support)**
